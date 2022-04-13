@@ -1,8 +1,8 @@
 function palindrome(str) {
     str = str.replace(/\s|_|,|\.|\/|\-|\)|\(/gi, "")
              .toLowerCase()
-    let r = str.split("").reverse().join("")
-    if (r === str.valueOf()){
+    let rev = str.split("").reverse().join("")
+    if (rev === str.valueOf()){
       return true
     }else{
       return false
